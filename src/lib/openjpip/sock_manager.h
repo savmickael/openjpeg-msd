@@ -32,7 +32,6 @@
 # define   	SOCK_MANAGER_H_
 
 #include "byte_manager.h"
-#include "opj_stdint.h"
 
 #ifdef _WIN32
 #include <winsock.h>

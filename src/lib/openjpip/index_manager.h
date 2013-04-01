@@ -31,7 +31,6 @@
 #ifndef   	INDEX_MANAGER_H_
 # define   	INDEX_MANAGER_H_
 
-#include "opj_config.h"
 #include "opj_includes.h"
 
 #include "byte_manager.h"

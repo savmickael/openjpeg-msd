@@ -43,7 +43,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include "query_parser.h"
-#include "opj_stdint.h"
 
 #ifdef SERVER
 #include "fcgi_stdio.h"
