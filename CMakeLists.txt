@@ -242,12 +242,28 @@ add_subdirectory(wrapping)
 
 #-----------------------------------------------------------------------------
 # opj_config.h generation (2/2)
+if (OPJ_HAVE_STDINT_H)
+	configure_file(
+	${CMAKE_CURRENT_SOURCE_DIR}/src/lib/openjp2/opj_types.h.in
+	${CMAKE_CURRENT_BINARY_DIR}/src/lib/openjp2/opj_types.h
+	@ONLY
+	)
+ elseif( (NOT OPJ_HAVE_STDINT_H) AND (WIN32) )
+ 	configure_file(
+	${CMAKE_CURRENT_SOURCE_DIR}/src/lib/openjp2/opj_types_win.h.in
+	${CMAKE_CURRENT_BINARY_DIR}/src/lib/openjp2/opj_types.h
+	@ONLY
+	)
+ else()
+	message(FATAL_ERROR "Unsupported platform: no stdint.h available")
+ endif()
  
  configure_file(
  ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/openjp2/opj_config_private.h.in
  ${CMAKE_CURRENT_BINARY_DIR}/src/lib/openjp2/opj_config_private.h
  @ONLY
  )
+ 
 
 #-----------------------------------------------------------------------------
 # Build DOCUMENTATION (not in ALL target and only if Doxygen is found)

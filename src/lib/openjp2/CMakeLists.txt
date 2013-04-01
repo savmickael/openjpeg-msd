@@ -1,7 +1,7 @@
 include_regular_expression("^.*$")
 
 include_directories(
-  ${OPENJPEG_BINARY_DIR}/src/lib/openjp2 # opj_config.h and opj_config_private.h
+  ${OPENJPEG_BINARY_DIR}/src/lib/openjp2 # opj_types.h and opj_config_private.h
 )
 # Defines the source code for the library
 set(OPENJPEG_SRCS
@@ -60,7 +60,7 @@ install(TARGETS ${OPENJPEG_LIBRARY_NAME}
 )
 
 # Install includes files
-install(FILES openjpeg.h opj_stdint.h
+install(FILES openjpeg.h opj_types.h
   DESTINATION ${OPENJPEG_INSTALL_INCLUDE_DIR} COMPONENT Headers
 )
 

@@ -80,30 +80,7 @@ defined with this macro as being exported.
 #endif /* OPJ_EXPORTS */
 #endif /* !OPJ_STATIC || !_WIN32 */
 
-typedef int OPJ_BOOL;
-#define OPJ_TRUE 1
-#define OPJ_FALSE 0
-
-typedef char          OPJ_CHAR;
-typedef float         OPJ_FLOAT32;
-typedef double        OPJ_FLOAT64;
-typedef unsigned char OPJ_BYTE;
-
-#include "opj_stdint.h"
-
-typedef int8_t   OPJ_INT8;
-typedef uint8_t  OPJ_UINT8;
-typedef int16_t  OPJ_INT16;
-typedef uint16_t OPJ_UINT16;
-typedef int32_t  OPJ_INT32;
-typedef uint32_t OPJ_UINT32;
-typedef int64_t  OPJ_INT64;
-typedef uint64_t OPJ_UINT64;
-
-typedef int64_t  OPJ_OFF_T; /* 64-bit file offset type */
-
-#include <stdio.h>
-typedef size_t   OPJ_SIZE_T;
+#include "opj_types.h"
 
 /* Avoid compile-time warning because parameter is not used */
 #define OPJ_ARG_NOT_USED(x) (void)(x)
