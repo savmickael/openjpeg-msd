@@ -242,14 +242,9 @@ add_subdirectory(wrapping)
 
 #-----------------------------------------------------------------------------
 # opj_config.h generation (2/2)
-configure_file(
- ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/openjp2/opj_config.h.cmake.in
- ${CMAKE_CURRENT_BINARY_DIR}/src/lib/openjp2/opj_config.h
- @ONLY
- )
  
  configure_file(
- ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/openjp2/opj_config_private.h.cmake.in
+ ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/openjp2/opj_config_private.h.in
  ${CMAKE_CURRENT_BINARY_DIR}/src/lib/openjp2/opj_config_private.h
  @ONLY
  )
