@@ -39,7 +39,6 @@
 #include <stdlib.h>
 #endif
 
-#include "opj_config.h"
 #include <stdlib.h>
 
 #ifdef _WIN32

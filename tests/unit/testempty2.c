@@ -28,7 +28,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "opj_config.h"
 #include "openjpeg.h"
 
 #define J2K_CFMT 0

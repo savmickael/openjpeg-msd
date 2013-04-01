@@ -29,7 +29,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include "opj_config.h"
 #include "openjpeg.h"
 #include "stdlib.h"
 

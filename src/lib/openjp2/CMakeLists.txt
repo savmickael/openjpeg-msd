@@ -1,9 +1,5 @@
 include_regular_expression("^.*$")
 
-#
-install( FILES  ${CMAKE_CURRENT_BINARY_DIR}/opj_config.h
- DESTINATION ${OPENJPEG_INSTALL_INCLUDE_DIR} COMPONENT Headers)
-
 include_directories(
   ${OPENJPEG_BINARY_DIR}/src/lib/openjp2 # opj_config.h and opj_config_private.h
 )
